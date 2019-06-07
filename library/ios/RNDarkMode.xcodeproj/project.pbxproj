@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6E20834D22AADA1000CC4732 /* RNDarkMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E20834C22AADA1000CC4732 /* RNDarkMode.m */; };
-		6E20834E22AADA1000CC4732 /* RNDarkMode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6E20834B22AADA1000CC4732 /* RNDarkMode.h */; };
+		6E2083D522AAE84600CC4732 /* RNDarkMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2083D422AAE84600CC4732 /* RNDarkMode.m */; };
+		6E2083D822AAFFD200CC4732 /* RNDarkModeTraitChangeListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2083D722AAFFD200CC4732 /* RNDarkModeTraitChangeListener.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,7 +18,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				6E20834E22AADA1000CC4732 /* RNDarkMode.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -26,8 +25,10 @@
 
 /* Begin PBXFileReference section */
 		6E20834822AADA1000CC4732 /* libRNDarkMode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNDarkMode.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E20834B22AADA1000CC4732 /* RNDarkMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNDarkMode.h; sourceTree = "<group>"; };
-		6E20834C22AADA1000CC4732 /* RNDarkMode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNDarkMode.m; sourceTree = "<group>"; };
+		6E2083D322AAE84600CC4732 /* RNDarkMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNDarkMode.h; sourceTree = "<group>"; };
+		6E2083D422AAE84600CC4732 /* RNDarkMode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNDarkMode.m; sourceTree = "<group>"; };
+		6E2083D622AAFFD200CC4732 /* RNDarkModeTraitChangeListener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNDarkModeTraitChangeListener.h; sourceTree = "<group>"; };
+		6E2083D722AAFFD200CC4732 /* RNDarkModeTraitChangeListener.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNDarkModeTraitChangeListener.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,8 +46,10 @@
 			isa = PBXGroup;
 			children = (
 				6E20834922AADA1000CC4732 /* Products */,
-				6E20834B22AADA1000CC4732 /* RNDarkMode.h */,
-				6E20834C22AADA1000CC4732 /* RNDarkMode.m */,
+				6E2083D322AAE84600CC4732 /* RNDarkMode.h */,
+				6E2083D422AAE84600CC4732 /* RNDarkMode.m */,
+				6E2083D622AAFFD200CC4732 /* RNDarkModeTraitChangeListener.h */,
+				6E2083D722AAFFD200CC4732 /* RNDarkModeTraitChangeListener.m */,
 			);
 			sourceTree = "<group>";
 			usesTabs = 1;
@@ -116,7 +119,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E20834D22AADA1000CC4732 /* RNDarkMode.m in Sources */,
+				6E2083D522AAE84600CC4732 /* RNDarkMode.m in Sources */,
+				6E2083D822AAFFD200CC4732 /* RNDarkModeTraitChangeListener.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,5 +14,8 @@
 	"peerDependencies": {
 		"react": "^16.8.3",
 		"react-native": "^0.59.9"
+	},
+	"dependencies": {
+		"events": "3.0.0"
 	}
 }

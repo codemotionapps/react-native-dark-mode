@@ -1,4 +1,5 @@
 {
 	"typescript.tsdk": "node_modules/typescript/lib",
 	"editor.insertSpaces": false,
+	"react-native-tools.projectRoot": "./example",
 }
