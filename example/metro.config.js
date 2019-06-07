@@ -2,7 +2,7 @@ const path = require('path')
 
 const blacklist = require('metro-config/src/defaults/blacklist')
 
-const libraryPath = path.resolve(__dirname, '..')
+const libraryPath = path.resolve(__dirname, '..', 'library')
 
 module.exports = {
 	watchFolders: [path.resolve(__dirname, 'node_modules'), libraryPath],

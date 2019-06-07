@@ -1,0 +1,18 @@
+{
+	"name": "react-native-dark-mode",
+	"version": "0.0.0",
+	"main": "./dist",
+	"typings": "./dist",
+	"repository": "git@github.com:codemotionapps/react-native-dark-mode.git",
+	"author": "Dimitar Nestorov <opensource@dimitarnestorov.com> (https://dimitarnestorov.com)",
+	"license": "MIT",
+	"scripts": {
+		"prepublishOnly": "rimraf dist && yarn run build",
+		"build": "tsc",
+		"watch": "yarn run build --watch"
+	},
+	"peerDependencies": {
+		"react": "^16.8.3",
+		"react-native": "^0.59.9"
+	}
+}

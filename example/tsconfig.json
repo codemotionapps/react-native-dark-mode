@@ -5,7 +5,7 @@
 		"noEmit": true,
 		"baseUrl": ".",
 		"paths": {
-			"react-native-dark-mode": ["../src"],
+			"react-native-dark-mode": ["../library/src"],
 		},
 	},
 }

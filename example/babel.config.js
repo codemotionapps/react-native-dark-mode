@@ -4,7 +4,7 @@ module.exports = {
 		['module-resolver', {
 			root: ['.'],
 			alias: {
-				'react-native-dark-mode': '../src',
+				'react-native-dark-mode': '../library/src',
 			},
 		}],
 	],
