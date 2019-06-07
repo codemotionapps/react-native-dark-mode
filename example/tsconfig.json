@@ -1,0 +1,11 @@
+{
+	"extends": "../tsconfig.base.json",
+	"compilerOptions": {
+		"allowSyntheticDefaultImports": true,
+		"noEmit": true,
+		"baseUrl": ".",
+		"paths": {
+			"react-native-dark-mode": ["../src"],
+		},
+	},
+}

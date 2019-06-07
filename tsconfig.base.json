@@ -1,0 +1,10 @@
+{
+	"compilerOptions": {
+		"strict": true,
+		"noImplicitAny": true,
+		"jsx": "react",
+		"lib": ["es6"],
+		"moduleResolution": "node",
+		"target": "esnext"
+	}
+}
