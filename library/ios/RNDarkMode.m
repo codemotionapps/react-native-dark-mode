@@ -20,20 +20,20 @@
 
 RCT_EXPORT_MODULE();
 
-RCT_EXPORT_BLOCKING_SYNCHRONOUS_METHOD(getCurrentStyle)
+RCT_EXPORT_BLOCKING_SYNCHRONOUS_METHOD(getCurrentMode)
 {
-	return [UIScreen getCurrentStyle];
+	return [UIScreen getCurrentMode];
 }
 
 - (NSArray<NSString *> *)supportedEvents
 {
-	return @[@"currentStyleChanged"];
+	return @[@"currentModeChanged"];
 }
 
-- (void)currentStyleChanged:(NSString *)style
+- (void)currentModeChanged:(NSString *)newMode
 {
 	if (hasListeners) {
-		[self sendEventWithName:@"currentStyleChanged" body:style];
+		[self sendEventWithName:@"currentModeChanged" body:newMode];
 	}
 }
 

@@ -6,7 +6,7 @@
 
 @interface UIScreen (RNDarkModeTraitChangeListener)
 
-+ (NSString *)getCurrentStyle;
++ (NSString *)getCurrentMode;
 + (void)setCurrentManager:(RNDarkMode *)manager;
 
 @end

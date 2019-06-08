@@ -5,6 +5,7 @@ module.exports = {
 			root: ['.'],
 			alias: {
 				'react-native-dark-mode': '../library/src',
+				'react': './node_modules/react',
 			},
 		}],
 	],

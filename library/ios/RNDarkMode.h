@@ -5,6 +5,6 @@
 
 @interface RNDarkMode : RCTEventEmitter <RCTBridgeModule>
 
-- (void)currentStyleChanged:(NSString *)style;
+- (void)currentModeChanged:(NSString *)newMode;
 
 @end

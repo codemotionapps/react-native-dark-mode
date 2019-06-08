@@ -2,11 +2,22 @@ import { EventEmitter } from 'events'
 import { NativeEventEmitter } from 'react-native'
 
 import { NativeModule } from './native-module'
+import { Mode } from './types'
 
-export const nativeEventEmitter = new NativeEventEmitter(NativeModule)
+const nativeEventEmitter = new NativeEventEmitter(NativeModule)
 
-export const eventEmitter = new EventEmitter()
+declare interface DarkModeEventEmitter {
+	on(event: 'currentModeChanged', listener: (mode: Mode) => void): this
+	once(event: 'currentModeChanged', listener: (mode: Mode) => void): this
+	emit(event: 'currentModeChanged', mode: Mode): boolean
+}
 
-nativeEventEmitter.addListener('currentStyleChanged', (newStyle) => {
-	eventEmitter.emit('currentStyleChanged', newStyle)
+class DarkModeEventEmitter extends EventEmitter {
+
+}
+
+export const eventEmitter = new DarkModeEventEmitter()
+
+nativeEventEmitter.addListener('currentModeChanged', (newStyle) => {
+	eventEmitter.emit('currentModeChanged', newStyle)
 })

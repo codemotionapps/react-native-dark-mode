@@ -3,8 +3,13 @@
 	"compilerOptions": {
 		"declaration": true,
 		"incremental": true,
+		"sourceMap": true,
 		"tsBuildInfoFile": "typescript.buildcache",
 		"outDir": "./dist",
+		"baseUrl": ".",
+		"paths": {
+			"react": ["../example/node_modules/react"],
+		},
 	},
 	"include": [
 		"./src",

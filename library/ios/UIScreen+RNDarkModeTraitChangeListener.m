@@ -4,12 +4,14 @@
 
 @implementation UIScreen (RNDarkModeTraitChangeListener)
 
-static NSString *currentStyle = @"light";
+static NSString *currentMode = @"light";
 static RNDarkMode *currentManager = NULL;
 
 + (void)load
 {
-	currentStyle = [UIScreen parseTraitCollection:UITraitCollection.currentTraitCollection];
+	if (@available(iOS 13.0, *)) {
+		currentMode = [UIScreen parseTraitCollection:UITraitCollection.currentTraitCollection];
+	}
 
 	static dispatch_once_t token;
 	dispatch_once(&token, ^{
@@ -32,27 +34,33 @@ static RNDarkMode *currentManager = NULL;
 {
 	[self newTraitCollectionDidChange:previousTraitCollection];
 	
-	if ([self.traitCollection hasDifferentColorAppearanceComparedToTraitCollection:previousTraitCollection]) {
-		NSString *newStyle = [UIScreen parseTraitCollection:self.traitCollection];
-		[UIScreen updateCurrentStyle:newStyle];
+	if (@available(iOS 13.0, *)) {
+		if ([self.traitCollection hasDifferentColorAppearanceComparedToTraitCollection:previousTraitCollection]) {
+			NSString *newStyle = [UIScreen parseTraitCollection:self.traitCollection];
+			[UIScreen updateCurrentStyle:newStyle];
+		}
 	}
 }
 
 + (NSString *)parseTraitCollection:(UITraitCollection *)traitCollection
 {
-	return traitCollection.userInterfaceStyle == UIUserInterfaceStyleDark ? @"dark" : @"light";
+	if (@available(iOS 12.0, *)) {
+		return traitCollection.userInterfaceStyle == UIUserInterfaceStyleDark ? @"dark" : @"light";
+	} else {
+		return @"light";
+	}
 }
 
-+ (NSString *)getCurrentStyle
++ (NSString *)getCurrentMode
 {
-	return currentStyle;
+	return currentMode;
 }
 
-+ (void)updateCurrentStyle:(NSString *)newStyle
++ (void)updateCurrentStyle:(NSString *)newMode
 {
-	currentStyle = newStyle;
+	currentMode = newMode;
 	if (currentManager) {
-		[currentManager currentStyleChanged:newStyle];
+		[currentManager currentModeChanged:newMode];
 	}
 }
 

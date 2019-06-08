@@ -1,6 +1,0 @@
-example/
-dist/tsconfig.tsbuildinfo
-tsconfig.json
-tsconfig.base.json
-yarn.lock
-typescript.buildcache
