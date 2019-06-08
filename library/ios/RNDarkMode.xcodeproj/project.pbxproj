@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6E2083D522AAE84600CC4732 /* RNDarkMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2083D422AAE84600CC4732 /* RNDarkMode.m */; };
-		6E2083D822AAFFD200CC4732 /* RNDarkModeTraitChangeListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2083D722AAFFD200CC4732 /* RNDarkModeTraitChangeListener.m */; };
+		6E20840122AB2A1700CC4732 /* UIScreen+RNDarkModeTraitChangeListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E20840022AB2A1700CC4732 /* UIScreen+RNDarkModeTraitChangeListener.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,8 +27,8 @@
 		6E20834822AADA1000CC4732 /* libRNDarkMode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNDarkMode.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E2083D322AAE84600CC4732 /* RNDarkMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNDarkMode.h; sourceTree = "<group>"; };
 		6E2083D422AAE84600CC4732 /* RNDarkMode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNDarkMode.m; sourceTree = "<group>"; };
-		6E2083D622AAFFD200CC4732 /* RNDarkModeTraitChangeListener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNDarkModeTraitChangeListener.h; sourceTree = "<group>"; };
-		6E2083D722AAFFD200CC4732 /* RNDarkModeTraitChangeListener.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNDarkModeTraitChangeListener.m; sourceTree = "<group>"; };
+		6E2083FF22AB2A1700CC4732 /* UIScreen+RNDarkModeTraitChangeListener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScreen+RNDarkModeTraitChangeListener.h"; sourceTree = "<group>"; };
+		6E20840022AB2A1700CC4732 /* UIScreen+RNDarkModeTraitChangeListener.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+RNDarkModeTraitChangeListener.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,8 +48,8 @@
 				6E20834922AADA1000CC4732 /* Products */,
 				6E2083D322AAE84600CC4732 /* RNDarkMode.h */,
 				6E2083D422AAE84600CC4732 /* RNDarkMode.m */,
-				6E2083D622AAFFD200CC4732 /* RNDarkModeTraitChangeListener.h */,
-				6E2083D722AAFFD200CC4732 /* RNDarkModeTraitChangeListener.m */,
+				6E2083FF22AB2A1700CC4732 /* UIScreen+RNDarkModeTraitChangeListener.h */,
+				6E20840022AB2A1700CC4732 /* UIScreen+RNDarkModeTraitChangeListener.m */,
 			);
 			sourceTree = "<group>";
 			usesTabs = 1;
@@ -120,7 +120,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E2083D522AAE84600CC4732 /* RNDarkMode.m in Sources */,
-				6E2083D822AAFFD200CC4732 /* RNDarkModeTraitChangeListener.m in Sources */,
+				6E20840122AB2A1700CC4732 /* UIScreen+RNDarkModeTraitChangeListener.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

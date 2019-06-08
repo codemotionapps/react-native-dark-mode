@@ -1,11 +1,9 @@
 #import <UIKit/UIKit.h>
 
 #import "RNDarkMode.h"
-#import "RNDarkModeTraitChangeListener.h"
 
 @implementation RNDarkMode
 {
-	RNDarkModeTraitChangeListener *listener;
 	bool hasListeners;
 }
 
@@ -14,7 +12,7 @@
 	self = [super init];
 
 	if (self) {
-		self->listener = [[RNDarkModeTraitChangeListener alloc] initWithModule:self];
+		[UIScreen setCurrentManager:self];
 	}
 
 	return self;
@@ -24,7 +22,7 @@ RCT_EXPORT_MODULE();
 
 RCT_EXPORT_BLOCKING_SYNCHRONOUS_METHOD(getCurrentStyle)
 {
-	return listener.currentStyle;
+	return [UIScreen getCurrentStyle];
 }
 
 - (NSArray<NSString *> *)supportedEvents
@@ -47,13 +45,6 @@ RCT_EXPORT_BLOCKING_SYNCHRONOUS_METHOD(getCurrentStyle)
 - (void)stopObserving
 {
 	hasListeners = NO;
-}
-
-- (void)invalidate
-{
-	dispatch_async(dispatch_get_main_queue(), ^{
-		[self->listener removeFromSuperview];
-	});
 }
 
 + (BOOL)requiresMainQueueSetup
