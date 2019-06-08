@@ -4,7 +4,6 @@
 		"declaration": true,
 		"incremental": true,
 		"sourceMap": true,
-		"tsBuildInfoFile": "typescript.buildcache",
 		"outDir": "./dist",
 		"baseUrl": ".",
 		"paths": {

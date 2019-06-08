@@ -56,4 +56,3 @@ buck-out/
 *.jsbundle
 
 dist/
-typescript.buildcache
