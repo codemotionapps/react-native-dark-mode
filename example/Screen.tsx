@@ -1,6 +1,8 @@
 import React from 'react'
 import { View, Text } from 'react-native'
-import { useDarkModeContext, Dynamic, useDynamicStyleSheet, DynamicStyleSheet } from 'react-native-dark-mode'
+import { useDarkModeContext, Dynamic, useDynamicStyleSheet, DynamicStyleSheet, DarkModeContextProvider } from 'react-native-dark-mode'
+
+import Extra from './Extra'
 
 export default function Screen() {
 	const mode = useDarkModeContext()
@@ -9,6 +11,13 @@ export default function Screen() {
 		<Text style={styles.initialStyle}>
 			Current mode: {mode}
 		</Text>
+
+		<DarkModeContextProvider value="dark">
+			<Extra />
+		</DarkModeContextProvider>
+		<DarkModeContextProvider value="light">
+			<Extra />
+		</DarkModeContextProvider>
 	</View>
 }
 

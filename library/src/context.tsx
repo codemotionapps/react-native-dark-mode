@@ -8,23 +8,29 @@ export const DarkModeContext = createContext<Mode>('light')
 DarkModeContext.displayName = 'DarkModeContext'
 
 interface IProps {
+	value?: Mode
 	children: JSX.Element
 }
-export function DarkModeContextProvider({ children }: IProps) {
-	const [ currentStyle, setCurrentStyle ] = useState<Mode>(initialMode)
+export function DarkModeContextProvider({ children, value }: IProps) {
+	const [ currentMode, setCurrentMode ] = useState<Mode>(initialMode)
 
 	useEffect(() => {
+		if (value) return
+		if (currentMode !== eventEmitter.currentMode) {
+			setCurrentMode(eventEmitter.currentMode)
+		}
+
 		function handler(mode: Mode) {
-			setCurrentStyle(mode)
+			setCurrentMode(mode)
 		}
 
 		eventEmitter.on('currentModeChanged', handler)
 		return () => {
 			eventEmitter.off('currentModeChanged', handler)
 		}
-	}, [])
+	}, [currentMode, value])
 
-	return <DarkModeContext.Provider value={currentStyle}>
+	return <DarkModeContext.Provider value={value || currentMode}>
 		{children}
 	</DarkModeContext.Provider>
 }
