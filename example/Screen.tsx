@@ -1,30 +1,28 @@
 import React from 'react'
-import { View, Text, StyleSheet } from 'react-native'
-import { useDarkModeContext, DynamicColor, useDynamicColor } from 'react-native-dark-mode'
-
-const labelDynamicColor = new DynamicColor('#000000', '#FFFFFF')
-const backgroundDyanmicColor = new DynamicColor('#FFFFFF', '#000000')
+import { View, Text } from 'react-native'
+import { useDarkModeContext, Dynamic, useDynamicStyleSheet, DynamicStyleSheet } from 'react-native-dark-mode'
 
 export default function Screen() {
-	const style = useDarkModeContext()
-	const color = useDynamicColor(labelDynamicColor)
-	const backgroundColor = useDynamicColor(backgroundDyanmicColor)
-	return <View style={[styles.container, { backgroundColor }]}>
-		<Text style={[styles.initialStyle, { color }]}>
-			Current style: {style}
+	const mode = useDarkModeContext()
+	const styles = useDynamicStyleSheet(dynamicStyles)
+	return <View style={styles.container}>
+		<Text style={styles.initialStyle}>
+			Current mode: {mode}
 		</Text>
 	</View>
 }
 
-const styles = StyleSheet.create({
+const dynamicStyles = new DynamicStyleSheet({
 	container: {
 		flex: 1,
 		justifyContent: 'center',
 		alignItems: 'center',
+		backgroundColor: new Dynamic('#FFFFFF', '#000000')
 	},
 	initialStyle: {
 		fontSize: 20,
 		textAlign: 'center',
 		margin: 10,
+		color: new Dynamic('#000000', '#FFFFFF'),
 	},
 })

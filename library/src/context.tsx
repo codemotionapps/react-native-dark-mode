@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useState, useEffect } from 'react'
 
 import { eventEmitter } from './event-emitter'
-import { initialStyle } from './initial-style'
+import { initialMode } from './initial-mode'
 import { Mode } from './types'
 
 export const DarkModeContext = createContext<Mode>('light')
@@ -11,7 +11,7 @@ interface IProps {
 	children: JSX.Element
 }
 export function DarkModeContextProvider({ children }: IProps) {
-	const [ currentStyle, setCurrentStyle ] = useState<Mode>(initialStyle)
+	const [ currentStyle, setCurrentStyle ] = useState<Mode>(initialMode)
 
 	useEffect(() => {
 		function handler(mode: Mode) {
