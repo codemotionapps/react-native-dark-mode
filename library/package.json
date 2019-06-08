@@ -1,8 +1,8 @@
 {
 	"name": "react-native-dark-mode",
-	"version": "0.0.1",
 	"main": "./dist",
 	"typings": "./dist",
+	"version": "0.0.2",
 	"repository": "git@github.com:codemotionapps/react-native-dark-mode.git",
 	"author": "Dimitar Nestorov <opensource@dimitarnestorov.com> (https://dimitarnestorov.com)",
 	"license": "MIT",

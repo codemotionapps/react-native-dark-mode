@@ -22,7 +22,15 @@ RCT_EXPORT_MODULE();
 
 - (NSDictionary *)constantsToExport
 {
-	return @{ @"initialMode": [UIScreen getCurrentMode] };
+	NSNumber *supportsDarkMode = [NSNumber numberWithBool:NO];
+	if (@available(iOS 13.0, *)) {
+		supportsDarkMode = [NSNumber numberWithBool:YES];
+	}
+	
+	return @{
+		@"initialMode": [UIScreen getCurrentMode],
+		@"supportsDarkMode": supportsDarkMode,
+	};
 }
 
 - (NSArray<NSString *> *)supportedEvents
