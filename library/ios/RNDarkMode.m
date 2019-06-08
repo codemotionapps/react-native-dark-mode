@@ -20,9 +20,9 @@
 
 RCT_EXPORT_MODULE();
 
-RCT_EXPORT_BLOCKING_SYNCHRONOUS_METHOD(getCurrentMode)
+- (NSDictionary *)constantsToExport
 {
-	return [UIScreen getCurrentMode];
+	return @{ @"initialMode": [UIScreen getCurrentMode] };
 }
 
 - (NSArray<NSString *> *)supportedEvents

@@ -2,6 +2,11 @@
 
 #import "RNDarkMode.h"
 
+typedef NS_ENUM(NSInteger, RNDarkModeMode) {
+	RNDarkModeModeLight,
+	RNDarkModeModeDark,
+};
+
 @class RNDarkMode;
 
 @interface UIScreen (RNDarkModeTraitChangeListener)
