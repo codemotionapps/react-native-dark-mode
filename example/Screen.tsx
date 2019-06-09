@@ -1,13 +1,18 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { View, Text, Image } from 'react-native'
 import { useDarkModeContext, Dynamic, useDynamicStyleSheet, DynamicStyleSheet, DarkModeProvider } from 'react-native-dark-mode'
 
 import Extra from './Extra'
+import { dark, light } from './images'
 
 export default function Screen() {
 	const mode = useDarkModeContext()
 	const styles = useDynamicStyleSheet(dynamicStyles)
+
+	const uri = mode === 'dark' ? dark : light
 	return <View style={styles.container}>
+		<Image source={{ uri }} style={styles.image} />
+
 		<Text style={styles.initialStyle}>
 			Current mode: {mode}
 		</Text>
@@ -33,5 +38,11 @@ const dynamicStyles = new DynamicStyleSheet({
 		textAlign: 'center',
 		margin: 10,
 		color: new Dynamic('#000000', '#FFFFFF'),
+	},
+	image: {
+		borderWidth: 1,
+		borderColor: new Dynamic('#000000', '#FFFFFF'),
+		width: 80,
+		height: 80,
 	},
 })
