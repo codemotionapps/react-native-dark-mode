@@ -11,7 +11,7 @@ type DynamicStyle<T extends Style> = { [Key in keyof T]: T[Key] | Dynamic<T[Key]
 type DynamicStyles<T> = { [P in keyof T]: DynamicStyle<Style> }
 
 type NormalizeStyle<T> = T extends DynamicStyle<infer R> ? R : T
-type NormalizeStyles<T extends DynamicStyles<T>> = { [Key in keyof T]: NormalizeStyle<T[Key]> }
+export type NormalizeStyles<T extends DynamicStyles<T>> = { [Key in keyof T]: NormalizeStyle<T[Key]> }
 
 function parseStylesFor<T extends DynamicStyles<T>>(styles: T, mode: Mode): NormalizeStyles<T> {
 	const newStyles: IndexedObject<IndexedObject<ValueOf<ValueOf<T>>>> = {}
