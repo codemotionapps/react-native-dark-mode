@@ -56,3 +56,5 @@ buck-out/
 *.jsbundle
 
 dist/
+
+library/README.md

@@ -1,21 +1,22 @@
 import React, { createContext, useContext, useState, useEffect, Context } from 'react'
 
 import { eventEmitter } from './event-emitter'
-import { initialMode } from './initial-mode'
 import { Mode } from './types'
 
-export const DarkModeContext: Context<Mode> = createContext<Mode>('light')
+type ContextType = Mode | 'current'
+export const DarkModeContext: Context<ContextType> = createContext<ContextType>('current')
 DarkModeContext.displayName = 'DarkModeContext'
 
 interface IProps {
 	mode?: Mode
 	children: JSX.Element
 }
-export function DarkModeProvider({ children, mode }: IProps) {
-	const [ currentMode, setCurrentMode ] = useState<Mode>(initialMode)
+
+function useCurrentMode(forcedMode?: Mode) {
+	const [ currentMode, setCurrentMode ] = useState<Mode>(eventEmitter.currentMode)
 
 	useEffect(() => {
-		if (mode) return
+		if (forcedMode) return
 		if (currentMode !== eventEmitter.currentMode) {
 			setCurrentMode(eventEmitter.currentMode)
 		}
@@ -28,7 +29,13 @@ export function DarkModeProvider({ children, mode }: IProps) {
 		return () => {
 			eventEmitter.off('currentModeChanged', handler)
 		}
-	}, [currentMode, mode])
+	}, [currentMode, forcedMode])
+
+	return currentMode
+}
+
+export function DarkModeProvider({ children, mode }: IProps) {
+	const currentMode = useCurrentMode(mode)
 
 	return <DarkModeContext.Provider value={mode || currentMode}>
 		{children}
@@ -36,5 +43,12 @@ export function DarkModeProvider({ children, mode }: IProps) {
 }
 
 export function useDarkModeContext(): Mode {
-	return useContext(DarkModeContext)
+	const context = useContext(DarkModeContext)
+	const currentMode = useCurrentMode(context === 'current' ? undefined : context)
+
+	if (context === 'current') {
+		return currentMode
+	}
+
+	return context
 }
