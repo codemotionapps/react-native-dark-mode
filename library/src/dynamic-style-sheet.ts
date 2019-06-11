@@ -1,13 +1,13 @@
 import { StyleSheet, ViewStyle, TextStyle, ImageStyle } from 'react-native'
 import { IndexedObject, ValueOf } from 'toolkit.ts'
 
-import { Dynamic } from './dynamic'
+import { DynamicValue } from './dynamic-value'
 import { Mode } from './types'
 
 
 type Style = ViewStyle | TextStyle | ImageStyle
 
-type DynamicStyle<T extends Style> = { [Key in keyof T]: T[Key] | Dynamic<T[Key]> }
+type DynamicStyle<T extends Style> = { [Key in keyof T]: T[Key] | DynamicValue<T[Key]> }
 type DynamicStyles<T> = { [P in keyof T]: DynamicStyle<Style> }
 
 type NormalizeStyle<T> = T extends DynamicStyle<infer R> ? R : T
@@ -21,7 +21,7 @@ function parseStylesFor<T extends DynamicStyles<T>>(styles: T, mode: Mode): Norm
 		const newStyle: IndexedObject<ValueOf<ValueOf<T>>> = {}
 		for (const i in style) {
 			const value = style[i]
-			newStyle[i] = value instanceof Dynamic ? value[mode] : value
+			newStyle[i] = value instanceof DynamicValue ? value[mode] : value
 		}
 		newStyles[i] = newStyle
 	}

@@ -1,6 +1,6 @@
 import React from 'react'
 import { View, Text } from 'react-native'
-import { DynamicStyleSheet, useDynamicStyleSheet, useDarkModeContext, Dynamic } from 'react-native-dark-mode'
+import { DynamicStyleSheet, useDynamicStyleSheet, useDarkModeContext, DynamicValue } from 'react-native-dark-mode'
 
 export default function Extra() {
 	const mode = useDarkModeContext()
@@ -14,7 +14,7 @@ const dynamicStyleSheet = new DynamicStyleSheet({
 	container: {
 		borderColor: 'red',
 		borderWidth: 1,
-		backgroundColor: new Dynamic('white', 'black'),
+		backgroundColor: new DynamicValue('white', 'black'),
 		width: 150,
 		height: 50,
 		justifyContent: 'center',
@@ -22,6 +22,6 @@ const dynamicStyleSheet = new DynamicStyleSheet({
 	},
 	text: {
 		textAlign: 'center',
-		color: new Dynamic('black', 'white'),
+		color: new DynamicValue('black', 'white'),
 	}
 })

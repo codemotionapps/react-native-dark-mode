@@ -1,10 +1,10 @@
-import React, { createContext, useContext, useState, useEffect } from 'react'
+import React, { createContext, useContext, useState, useEffect, Context } from 'react'
 
 import { eventEmitter } from './event-emitter'
 import { initialMode } from './initial-mode'
 import { Mode } from './types'
 
-export const DarkModeContext = createContext<Mode>('light')
+export const DarkModeContext: Context<Mode> = createContext<Mode>('light')
 DarkModeContext.displayName = 'DarkModeContext'
 
 interface IProps {
@@ -35,6 +35,6 @@ export function DarkModeProvider({ children, mode }: IProps) {
 	</DarkModeContext.Provider>
 }
 
-export function useDarkModeContext() {
+export function useDarkModeContext(): Mode {
 	return useContext(DarkModeContext)
 }
