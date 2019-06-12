@@ -1,6 +1,6 @@
 import { EventEmitter } from 'events'
 
-import { initialMode } from './initial-mode'
+import { initialMode } from './initial-mode-wrapper'
 import { Mode } from './types'
 
 export declare interface DarkModeEventEmitter {

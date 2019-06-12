@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, useEffect, Context } from 'react'
 
-import { eventEmitter } from './event-emitter'
+import { eventEmitter } from './event-emitter-wrapper'
 import { Mode } from './types'
 
 type ContextType = Mode | 'current'
