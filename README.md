@@ -127,8 +127,8 @@ const darkLogo = require('./dark.png')
 const logoUri = new DynamicValue(lightLogo, darkLogo)
 
 function Logo() {
-	const uri = useDynamicValue(logoUri)
-	return <Image source={{ uri }} />
+	const source = useDynamicValue(logoUri)
+	return <Image source={source} />
 }
 ```
 
