@@ -5,6 +5,8 @@
 	"typings": "./dist/index.d.ts",
 	"repository": "git@github.com:codemotionapps/react-native-dark-mode.git",
 	"author": "Dimitar Nestorov <opensource@dimitarnestorov.com> (https://dimitarnestorov.com)",
+	"homepage": "https://github.com/codemotionapps/react-native-dark-mode",
+	"description": "Detect dark mode in React Native",
 	"license": "MIT",
 	"scripts": {
 		"prepublishOnly": "yarn run clean && yarn run copy-readme && yarn run build && yarn run copy-js-d.ts",
