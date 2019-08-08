@@ -7,6 +7,6 @@ const nativeEventEmitter = new NativeEventEmitter(NativeModule)
 
 export const eventEmitter = new DarkModeEventEmitter()
 
-nativeEventEmitter.addListener('currentModeChanged', (newStyle) => {
+nativeEventEmitter.addListener('currentModeChanged', newStyle => {
 	eventEmitter.emit('currentModeChanged', newStyle)
 })

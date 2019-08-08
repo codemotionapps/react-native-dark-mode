@@ -4,7 +4,7 @@
 		"noImplicitAny": true,
 		"allowSyntheticDefaultImports": true,
 		"jsx": "react",
-		"lib": ["es6"],
+		"lib": ["es6", "dom"],
 		"moduleResolution": "node",
 		"target": "esnext"
 	}

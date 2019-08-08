@@ -21,7 +21,6 @@
 	"dependencies": {
 		"@types/events": "^3.0.0",
 		"@types/react": "^16.8.19",
-		"@types/react-native": "^0.57.60",
 		"events": "3.0.0",
 		"toolkit.ts": "0.0.2"
 	}

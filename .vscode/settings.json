@@ -1,4 +1,5 @@
 {
 	"typescript.tsdk": "node_modules/typescript/lib",
 	"editor.insertSpaces": false,
+	"editor.formatOnSave": true,
 }

@@ -15,7 +15,7 @@ export class DarkModeEventEmitter extends EventEmitter {
 	constructor() {
 		super()
 
-		this.on('currentModeChanged', (mode) => {
+		this.on('currentModeChanged', mode => {
 			this.currentMode = mode
 		})
 	}
