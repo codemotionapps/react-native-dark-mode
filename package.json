@@ -1,5 +1,10 @@
 {
-	"private": true,
+	"name": "react-native-dark-mode",
+	"version: "1.0.0",
+	"description": "Detect dark mode in React Native",
+  	"license": "MIT",
+  	"author": "Dimitar Nestorov",
+	"homepage": "https://github.com/codemotionapps/react-native-dark-mode",
 	"workspaces": {
 		"packages": [
 			"example",
