@@ -1,0 +1,370 @@
+{
+  "program": {
+    "fileInfos": {
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/node_modules/typescript/lib/lib.es5.d.ts": {
+        "version": "1f753cee573dea40df8a9dc873fef5566957b19ad513874f6643d8dfb14842d0",
+        "signature": "1f753cee573dea40df8a9dc873fef5566957b19ad513874f6643d8dfb14842d0"
+      },
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/node_modules/typescript/lib/lib.es2015.d.ts": {
+        "version": "7994d44005046d1413ea31d046577cdda33b8b2470f30281fd9c8b3c99fe2d96",
+        "signature": "7994d44005046d1413ea31d046577cdda33b8b2470f30281fd9c8b3c99fe2d96"
+      },
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/node_modules/typescript/lib/lib.es2015.core.d.ts": {
+        "version": "2a0390a665763bcc90f0670e43c587928d8fefe2a94a11209c1e22cba7b09f52",
+        "signature": "2a0390a665763bcc90f0670e43c587928d8fefe2a94a11209c1e22cba7b09f52"
+      },
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/node_modules/typescript/lib/lib.es2015.collection.d.ts": {
+        "version": "dd94d8ef48c562389eb58af8df3a3a34d11367f7c818192aa5f16470d469e3f0",
+        "signature": "dd94d8ef48c562389eb58af8df3a3a34d11367f7c818192aa5f16470d469e3f0"
+      },
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/node_modules/typescript/lib/lib.es2015.generator.d.ts": {
+        "version": "828413486bdcaa342558e8e4570b1b287b776cb61b4b70b0214bd10c5d9a94c3",
+        "signature": "828413486bdcaa342558e8e4570b1b287b776cb61b4b70b0214bd10c5d9a94c3"
+      },
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/node_modules/typescript/lib/lib.es2015.iterable.d.ts": {
+        "version": "6c9f73334f8bf47aea685ca5b46a8f7e992a223e96fbceb030f26a4d2324ba21",
+        "signature": "6c9f73334f8bf47aea685ca5b46a8f7e992a223e96fbceb030f26a4d2324ba21"
+      },
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/node_modules/typescript/lib/lib.es2015.promise.d.ts": {
+        "version": "e6b8ff2798f8ebd7a1c7afd8671f2cb67ee1901c422f5964d74b0b34c6574ea2",
+        "signature": "e6b8ff2798f8ebd7a1c7afd8671f2cb67ee1901c422f5964d74b0b34c6574ea2"
+      },
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/node_modules/typescript/lib/lib.es2015.proxy.d.ts": {
+        "version": "5e72f949a89717db444e3bd9433468890068bb21a5638d8ab15a1359e05e54fe",
+        "signature": "5e72f949a89717db444e3bd9433468890068bb21a5638d8ab15a1359e05e54fe"
+      },
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/node_modules/typescript/lib/lib.es2015.reflect.d.ts": {
+        "version": "f5b242136ae9bfb1cc99a5971cccc44e99947ae6b5ef6fd8aa54b5ade553b976",
+        "signature": "f5b242136ae9bfb1cc99a5971cccc44e99947ae6b5ef6fd8aa54b5ade553b976"
+      },
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/node_modules/typescript/lib/lib.es2015.symbol.d.ts": {
+        "version": "9ae2860252d6b5f16e2026d8a2c2069db7b2a3295e98b6031d01337b96437230",
+        "signature": "9ae2860252d6b5f16e2026d8a2c2069db7b2a3295e98b6031d01337b96437230"
+      },
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts": {
+        "version": "3e0a459888f32b42138d5a39f706ff2d55d500ab1031e0988b5568b0f67c2303",
+        "signature": "3e0a459888f32b42138d5a39f706ff2d55d500ab1031e0988b5568b0f67c2303"
+      },
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/react/global.d.ts": {
+        "version": "68188f9f0950ca019af3f061cb494751a2798648586207cbf2089dccd68b663c",
+        "signature": "68188f9f0950ca019af3f061cb494751a2798648586207cbf2089dccd68b663c"
+      },
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/csstype/index.d.ts": {
+        "version": "1c858c49eb3b946726e6a9a03e081b418349552ef96dcc0aedf304b3b73b667f",
+        "signature": "1c858c49eb3b946726e6a9a03e081b418349552ef96dcc0aedf304b3b73b667f"
+      },
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/prop-types/index.d.ts": {
+        "version": "5e632216dfe01f2ff76f1c312c28632fde75364c24d659b732f2ee59e9ccf1b2",
+        "signature": "5e632216dfe01f2ff76f1c312c28632fde75364c24d659b732f2ee59e9ccf1b2"
+      },
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/react/index.d.ts": {
+        "version": "671595c3a0de110a1314cb823c2ea6990dd26857e86d31645fa122c25773f27a",
+        "signature": "671595c3a0de110a1314cb823c2ea6990dd26857e86d31645fa122c25773f27a"
+      },
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/node_modules/@types/events/index.d.ts": {
+        "version": "400db42c3a46984118bff14260d60cec580057dc1ab4c2d7310beb643e4f5935",
+        "signature": "400db42c3a46984118bff14260d60cec580057dc1ab4c2d7310beb643e4f5935"
+      },
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/types.ts": {
+        "version": "39f1b941038bf1cb895bda35e04a0b6dfa3bd9434b3e6878675b7e55329ffa6c",
+        "signature": "3da6051b9a54fb6fa409507d72a9c0c35b2ef38e5a7aa3a3853a364180d034a5"
+      },
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/initial-mode.android.ts": {
+        "version": "c5bfe01889025f50d06485fbabef2fd49151748c97c2a6692a35028423bd3253",
+        "signature": "678085987e68bb2c7b7e5d41541295e16b290ec41c0122b2673a9f36d79e41a8"
+      },
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/initial-mode-wrapper.d.ts": {
+        "version": "89c8f154648b178e159a5ee5ded66a7b8c1179d2102f426fbb05315079a00ff3",
+        "signature": "89c8f154648b178e159a5ee5ded66a7b8c1179d2102f426fbb05315079a00ff3"
+      },
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/dark-mode-event-emitter.ts": {
+        "version": "a8b7517b9036779d7c8f67b684f2759fdfda08b0bb9eea52419f5bc6307134cf",
+        "signature": "03a81b12914681aac29c02886f95d9b0f3d6f1254cd43a93437ec143b99ec5a0"
+      },
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/event-emitter.android.ts": {
+        "version": "5770c8cc162296438387107c5750f1b61faddd59704af31ddb132d6d8d708216",
+        "signature": "9d885d9b8750041ec8a61555da298cac120462ba4e0374fbe2602fdf9846657d"
+      },
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/event-emitter-wrapper.d.ts": {
+        "version": "1eb7f529df3a2cad195d165485e790c5e3aa96bbdbbafca1c2156e0ecf0ca7e0",
+        "signature": "1eb7f529df3a2cad195d165485e790c5e3aa96bbdbbafca1c2156e0ecf0ca7e0"
+      },
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/context.tsx": {
+        "version": "3b766fedcb3ff521ad283db305c6f6e88756627c67c7ae8b7dfe1e82c718c84f",
+        "signature": "3dbb9ca3c5231ce5efa0db3632ea4b24491ee7c9afac9f6dc559a9942fb32174"
+      },
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/react-native/globals.d.ts": {
+        "version": "c035c908a95e9a9e5ed600d5b760f42e3702ab7daaafe37f4c9333b6ae2165b0",
+        "signature": "c035c908a95e9a9e5ed600d5b760f42e3702ab7daaafe37f4c9333b6ae2165b0"
+      },
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/react-native/legacy-properties.d.ts": {
+        "version": "ec77f51e210ab48b73a2786406d019719360df17dd1e915b83c8905852c002b6",
+        "signature": "ec77f51e210ab48b73a2786406d019719360df17dd1e915b83c8905852c002b6"
+      },
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/react-native/batchedbridge.d.ts": {
+        "version": "51a997c9f91edc69fc4216a19e02161e5babeb8e8ecff99b49010ef2d38c9575",
+        "signature": "51a997c9f91edc69fc4216a19e02161e5babeb8e8ecff99b49010ef2d38c9575"
+      },
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/react-native/devtools.d.ts": {
+        "version": "ae1a867799ca7265542b119e6e8f958651926a7c927d6f4177a44ea637f350e0",
+        "signature": "ae1a867799ca7265542b119e6e8f958651926a7c927d6f4177a44ea637f350e0"
+      },
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/react-native/index.d.ts": {
+        "version": "80828781086972168b6f0de7300953e769f6fd714516f39dc39fb556ffede344",
+        "signature": "80828781086972168b6f0de7300953e769f6fd714516f39dc39fb556ffede344"
+      },
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/node_modules/toolkit.ts/index.d.ts": {
+        "version": "79ffff9ca0e2a03752b44e319900e3a2b0460d5f659ab71294843859292c9582",
+        "signature": "79ffff9ca0e2a03752b44e319900e3a2b0460d5f659ab71294843859292c9582"
+      },
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/dynamic-value.ts": {
+        "version": "8247d798d1361b47055f8cc6417fc667b4925afee7d00b3c44651fc7a956cc17",
+        "signature": "caaeba2968ed63154dc98aaaa4f94b96e7d9e9aa00eb822a4e2e05dafc1960c6"
+      },
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/dynamic-style-sheet.ts": {
+        "version": "05c3d9ce9b04327e7d777855eed81a9b89ac44d273eb1a33fc98f36d892464ee",
+        "signature": "e2f4cf327950a8d15ba1670850d31e2c807ae0353665f37b18e715d2d9c224ce"
+      },
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/native-module.ts": {
+        "version": "9119b1d0cf595087dca40b5216dd7a3b9e1cf7c7d72ff7b10179fa7ef930eefc",
+        "signature": "1278957de49c053263f144b8f1bfcbb4d3346e516a91409550e690200aa86aa9"
+      },
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/event-emitter.ios.ts": {
+        "version": "62d64a38a09f38feb7c870d708b6eaad1ec87c213f0da6584690a2a04febf993",
+        "signature": "9d885d9b8750041ec8a61555da298cac120462ba4e0374fbe2602fdf9846657d"
+      },
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/use-dark-mode.ts": {
+        "version": "6bc2cf75b2fbe7d73a2e7e6699b998fff3fc99478bc38fc5c885d99b61c6ac05",
+        "signature": "ee99fa5746efc71af938281ecbffe0691c956e7b742a8865626aafbae5493615"
+      },
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/use-dynamic-style-sheet.ts": {
+        "version": "32fe8fed23e09c6975d835677a3ae08ce86e695340e8f93a899e5249a291cdc8",
+        "signature": "35ab0af291ffbc09951d9746444f663d0ebcac40bf4ec82f16c671d941a317e3"
+      },
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/use-dynamic-value.ts": {
+        "version": "18ef095e1b2f3ea213a22abb02b37ec06369128e047e4da1d7943241d347026c",
+        "signature": "ddf1fdf11f3fbc644aba3672b212b2995bd5ff3a5143587e09924bc6cf60c50b"
+      },
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/index.ts": {
+        "version": "b571a88438e590f71e48fe1b4748dde602f81344d594c04a5767f8f10dd33ddf",
+        "signature": "bc831400707975223f65794616f19f9fae92400751b1888be96b3caa430e2201"
+      },
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/initial-mode.ios.ts": {
+        "version": "ebeb95d6c32c97aaa5975b8cc67b563a57e3366f0fde2d6204bd867ee1b84d4d",
+        "signature": "678085987e68bb2c7b7e5d41541295e16b290ec41c0122b2673a9f36d79e41a8"
+      }
+    },
+    "options": {
+      "strict": true,
+      "noImplicitAny": true,
+      "allowSyntheticDefaultImports": true,
+      "jsx": 2,
+      "lib": [
+        "lib.es2015.d.ts"
+      ],
+      "moduleResolution": 2,
+      "target": 8,
+      "declaration": true,
+      "incremental": true,
+      "sourceMap": true,
+      "outDir": "/Users/pontus.abrahamsson/Desktop/react-native-dark-mode/library/dist",
+      "baseUrl": "/Users/pontus.abrahamsson/Desktop/react-native-dark-mode/library",
+      "paths": {
+        "react": [
+          "../example/node_modules/react"
+        ]
+      },
+      "configFilePath": "/Users/pontus.abrahamsson/Desktop/react-native-dark-mode/library/tsconfig.json"
+    },
+    "referencedMap": {
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/react/index.d.ts": [
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/csstype/index.d.ts",
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/prop-types/index.d.ts",
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/react/global.d.ts"
+      ],
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/initial-mode.android.ts": [
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/types.ts"
+      ],
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/initial-mode-wrapper.d.ts": [
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/initial-mode.android.ts"
+      ],
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/dark-mode-event-emitter.ts": [
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/node_modules/@types/events/index.d.ts",
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/initial-mode-wrapper.d.ts",
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/types.ts"
+      ],
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/event-emitter.android.ts": [
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/dark-mode-event-emitter.ts"
+      ],
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/event-emitter-wrapper.d.ts": [
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/event-emitter.android.ts"
+      ],
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/context.tsx": [
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/react/index.d.ts",
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/event-emitter-wrapper.d.ts",
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/types.ts"
+      ],
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/react-native/legacy-properties.d.ts": [
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/react-native/index.d.ts"
+      ],
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/react-native/devtools.d.ts": [
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/react-native/devtools.d.ts"
+      ],
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/react-native/index.d.ts": [
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/prop-types/index.d.ts",
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/react/index.d.ts",
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/react-native/globals.d.ts",
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/react-native/legacy-properties.d.ts",
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/react-native/batchedbridge.d.ts",
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/react-native/devtools.d.ts"
+      ],
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/dynamic-style-sheet.ts": [
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/react-native/index.d.ts",
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/node_modules/toolkit.ts/index.d.ts",
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/dynamic-value.ts",
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/types.ts"
+      ],
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/native-module.ts": [
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/react-native/index.d.ts"
+      ],
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/event-emitter.ios.ts": [
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/react-native/index.d.ts",
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/dark-mode-event-emitter.ts",
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/native-module.ts"
+      ],
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/use-dark-mode.ts": [
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/context.tsx"
+      ],
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/use-dynamic-style-sheet.ts": [
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/context.tsx",
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/dynamic-style-sheet.ts"
+      ],
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/use-dynamic-value.ts": [
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/context.tsx",
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/dynamic-value.ts"
+      ],
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/index.ts": [
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/context.tsx",
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/dynamic-style-sheet.ts",
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/dynamic-value.ts",
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/event-emitter-wrapper.d.ts",
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/initial-mode-wrapper.d.ts",
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/use-dark-mode.ts",
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/use-dynamic-style-sheet.ts",
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/use-dynamic-value.ts"
+      ],
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/initial-mode.ios.ts": [
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/native-module.ts",
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/types.ts"
+      ]
+    },
+    "exportedModulesMap": {
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/react/index.d.ts": [
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/csstype/index.d.ts",
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/prop-types/index.d.ts",
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/react/global.d.ts"
+      ],
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/react-native/index.d.ts": [
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/prop-types/index.d.ts",
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/react/index.d.ts",
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/react-native/globals.d.ts",
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/react-native/legacy-properties.d.ts",
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/react-native/batchedbridge.d.ts",
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/react-native/devtools.d.ts"
+      ],
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/event-emitter.ios.ts": [
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/dark-mode-event-emitter.ts"
+      ],
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/initial-mode.ios.ts": [
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/types.ts"
+      ],
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/dynamic-style-sheet.ts": [
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/dynamic-value.ts",
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/react-native/index.d.ts"
+      ],
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/index.ts": [
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/context.tsx",
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/dynamic-style-sheet.ts",
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/dynamic-value.ts",
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/event-emitter-wrapper.d.ts",
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/initial-mode-wrapper.d.ts",
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/use-dark-mode.ts",
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/use-dynamic-style-sheet.ts",
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/use-dynamic-value.ts"
+      ],
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/use-dynamic-style-sheet.ts": [
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/dynamic-style-sheet.ts"
+      ],
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/react-native/legacy-properties.d.ts": [
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/react-native/index.d.ts"
+      ],
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/context.tsx": [
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/react/index.d.ts",
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/types.ts"
+      ],
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/use-dynamic-value.ts": [
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/dynamic-value.ts"
+      ],
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/dark-mode-event-emitter.ts": [
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/types.ts",
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/node_modules/@types/events/index.d.ts"
+      ],
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/event-emitter.android.ts": [
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/dark-mode-event-emitter.ts"
+      ],
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/event-emitter-wrapper.d.ts": [
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/event-emitter.android.ts"
+      ],
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/initial-mode.android.ts": [
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/types.ts"
+      ],
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/initial-mode-wrapper.d.ts": [
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/initial-mode.android.ts"
+      ],
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/react-native/devtools.d.ts": [
+        "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/react-native/devtools.d.ts"
+      ]
+    },
+    "semanticDiagnosticsPerFile": [
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/node_modules/typescript/lib/lib.es5.d.ts",
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/node_modules/typescript/lib/lib.es2015.d.ts",
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/node_modules/typescript/lib/lib.es2015.core.d.ts",
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/node_modules/typescript/lib/lib.es2015.collection.d.ts",
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/node_modules/typescript/lib/lib.es2015.generator.d.ts",
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/node_modules/typescript/lib/lib.es2015.iterable.d.ts",
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/node_modules/typescript/lib/lib.es2015.promise.d.ts",
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/node_modules/typescript/lib/lib.es2015.proxy.d.ts",
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/node_modules/typescript/lib/lib.es2015.reflect.d.ts",
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/node_modules/typescript/lib/lib.es2015.symbol.d.ts",
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/react/global.d.ts",
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/csstype/index.d.ts",
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/prop-types/index.d.ts",
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/react/index.d.ts",
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/node_modules/@types/events/index.d.ts",
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/types.ts",
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/initial-mode.android.ts",
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/initial-mode-wrapper.d.ts",
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/dark-mode-event-emitter.ts",
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/event-emitter.android.ts",
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/event-emitter-wrapper.d.ts",
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/context.tsx",
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/react-native/globals.d.ts",
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/react-native/legacy-properties.d.ts",
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/react-native/batchedbridge.d.ts",
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/react-native/devtools.d.ts",
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/node_modules/@types/react-native/index.d.ts",
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/node_modules/toolkit.ts/index.d.ts",
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/dynamic-value.ts",
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/dynamic-style-sheet.ts",
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/native-module.ts",
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/event-emitter.ios.ts",
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/use-dark-mode.ts",
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/use-dynamic-style-sheet.ts",
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/use-dynamic-value.ts",
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/index.ts",
+      "/users/pontus.abrahamsson/desktop/react-native-dark-mode/library/src/initial-mode.ios.ts"
+    ]
+  },
+  "version": "3.5.1"
+}
