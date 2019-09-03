@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.module_name  = 'ReactNativeDarkMode'
 
   s.source       = { :git => "https://github.com/codemotionapps/react-native-dark-mode.git", :tag => "#{s.version}" }
-  s.source_files  = "library/ios/**/*.{h,m}"
+  s.source_files  = "ios/**/*.{h,m}"
 
   s.dependency 'React'
   s.frameworks = 'UIKit'
