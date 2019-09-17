@@ -1,6 +1,6 @@
 {
 	"name": "react-native-dark-mode",
-	"version": "0.0.10",
+	"version": "0.0.11",
 	"main": "./dist/index.js",
 	"typings": "./dist/index.d.ts",
 	"repository": "git@github.com:codemotionapps/react-native-dark-mode.git",
@@ -18,12 +18,12 @@
 	},
 	"peerDependencies": {
 		"react": "^16.8.3",
-		"react-native": "^0.59.9"
+		"react-native": "^0.59.9 || ^0.60.0"
 	},
 	"dependencies": {
-		"@types/events": "^3.0.0",
-		"@types/react": "^16.8.19",
-		"@types/react-native": "^0.57.60",
+		"@types/events": "*",
+		"@types/react": "*",
+		"@types/react-native": "*",
 		"events": "3.0.0",
 		"toolkit.ts": "0.0.2"
 	}

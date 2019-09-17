@@ -34,7 +34,7 @@ export class DynamicStyleSheet<T extends DynamicStyles<T>> {
 	public readonly light: NormalizeStyles<T>
 
 	constructor(styles: T) {
-		this.dark = StyleSheet.create(parseStylesFor(styles, 'dark'))
-		this.light = StyleSheet.create(parseStylesFor(styles, 'light'))
+		this.dark = StyleSheet.create(parseStylesFor(styles, 'dark')) as NormalizeStyles<T>
+		this.light = StyleSheet.create(parseStylesFor(styles, 'light')) as NormalizeStyles<T>
 	}
 }
