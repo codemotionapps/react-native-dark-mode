@@ -17,7 +17,7 @@
 	},
 	"peerDependencies": {
 		"react": "^16.8.3",
-		"react-native": "^0.59.9 || ^0.60.0"
+		"react-native": "^0.59.9 || ^0.60.0 || ^0.61.0"
 	},
 	"dependencies": {
 		"@types/events": "*",
