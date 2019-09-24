@@ -3,7 +3,7 @@
 [![npm version](https://img.shields.io/npm/v/react-native-dark-mode.svg)](https://www.npmjs.com/package/react-native-dark-mode)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
-<p align="center"><img src="https://raw.githubusercontent.com/codemotionapps/react-native-dark-mode/master/showcase.ios.gif" alt="Showcase iOS" width="200" height="433">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://raw.githubusercontent.com/codemotionapps/react-native-dark-mode/master/showcase.android.gif" alt="Showcase Android" width="304" height="433"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/codemotionapps/react-native-dark-mode/master/showcase.ios.gif" alt="Showcase iOS" width="200" height="433">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://raw.githubusercontent.com/codemotionapps/react-native-dark-mode/master/showcase.android.gif" alt="Showcase Android" width="237" height="433"></p>
 
 ## Installation
 
