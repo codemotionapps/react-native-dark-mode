@@ -1,6 +1,6 @@
 {
 	"name": "react-native-dark-mode",
-	"version": "0.0.11",
+	"version": "0.1.0",
 	"main": "./dist/index.js",
 	"typings": "./dist/index.d.ts",
 	"repository": "git@github.com:codemotionapps/react-native-dark-mode.git",
@@ -9,10 +9,9 @@
 	"description": "Detect dark mode in React Native",
 	"license": "MIT",
 	"scripts": {
-		"prepublishOnly": "yarn run clean && yarn run copy-readme && yarn run build && yarn run copy-js-d.ts",
+		"prepublishOnly": "yarn run clean && yarn run copy-readme && yarn run build",
 		"clean": "rimraf dist",
 		"copy-readme": "cp ../README.md ./",
-		"copy-js-d.ts": "cp ./src/*.js ./src/*.d.ts ./dist",
 		"build": "tsc",
 		"watch": "yarn run build --watch"
 	},

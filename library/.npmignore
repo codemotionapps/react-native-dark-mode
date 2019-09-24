@@ -1,3 +1,8 @@
 tsconfig.json
 tsconfig.tsbuildinfo
 xcuserdata
+android/build/
+android/*.iml
+android/local.properties
+android/.idea
+android/.gradle
