@@ -3,13 +3,13 @@
 [![npm version](https://img.shields.io/npm/v/react-native-dark-mode.svg)](https://www.npmjs.com/package/react-native-dark-mode)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
-<p align="center"><img src="https://raw.githubusercontent.com/codemotionapps/react-native-dark-mode/master/showcase.gif" alt="Showcase" width="200" height="433"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/codemotionapps/react-native-dark-mode/master/showcase-ios.gif" alt="Showcase" width="200" height="433"></p>
 
 ## Installation
 
 ```sh
 npm install react-native-dark-mode
-react-native link react-native-dark-mode
+# If you're running React Native 0.59 or lower also run `react-native link react-native-dark-mode`
 ```
 
 ## Usage
@@ -58,12 +58,12 @@ import { DynamicStyleSheet, DynamicValue, useDynamicStyleSheet } from 'react-nat
 const dynamicStyles = new DynamicStyleSheet({
 	container: {
 		backgroundColor: new DynamicValue('white', 'black'),
-		flex: 1
+		flex: 1,
 	},
 	text: {
 		color: new DynamicValue('black', 'white'),
-		textAlign: 'center'
-	}
+		textAlign: 'center',
+	},
 })
 
 function Component() {
@@ -160,7 +160,7 @@ Allows you to subscribe to changes in the mode.
 ```javascript
 import { eventEmitter } from 'react-native-dark-mode'
 
-eventEmitter.on('currentModeChanged', (newMode) => {
+eventEmitter.on('currentModeChanged', newMode => {
 	console.log('Switched to', newMode, 'mode')
 })
 ```
@@ -169,6 +169,6 @@ eventEmitter.on('currentModeChanged', (newMode) => {
 
 ### iOS
 
-- Xcode 11 beta 1 or higher
-- React Native 0.59.9 or higher
-- iOS 13 beta 1 or higher to see it in action
+-   Xcode 11 beta 1 or higher
+-   React Native 0.59.9 or higher
+-   iOS 13 beta 1 or higher to see it in action

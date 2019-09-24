@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.codemotionapps.reactnativedarkmode">
+
+	<application>
+		<service android:name=".DarkModeService" />
+	</application>
+
+</manifest>
