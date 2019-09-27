@@ -172,3 +172,7 @@ eventEmitter.on('currentModeChanged', newMode => {
 -   Xcode 11 beta 1 or higher
 -   React Native 0.59.9 or higher
 -   iOS 13 beta 1 or higher to see it in action
+
+### Android
+
+-   Android 10 or Android Auto to see it in action
