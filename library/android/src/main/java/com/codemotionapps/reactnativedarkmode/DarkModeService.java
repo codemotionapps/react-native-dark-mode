@@ -17,7 +17,9 @@ public class DarkModeService extends Service {
 	public void onConfigurationChanged(Configuration newConfig) {
 		super.onConfigurationChanged(newConfig);
 
-		DarkModeModule.reactContext.getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class)
-				.emit("currentModeChanged", DarkModeModule.getCurrentMode(newConfig));
+		if (DarkModeModule.reactContext != null) {
+			DarkModeModule.reactContext.getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class)
+					.emit("currentModeChanged", DarkModeModule.getCurrentMode(newConfig));
+		}
 	}
 }

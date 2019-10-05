@@ -1,9 +1,8 @@
 package com.codemotionapps.reactnativedarkmode;
 
-import android.content.BroadcastReceiver;
-import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
+import android.os.Build;
 
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
@@ -13,23 +12,18 @@ import java.util.Map;
 
 public class DarkModeModule extends ReactContextBaseJavaModule {
 	public static ReactApplicationContext reactContext;
-	public static final String CUSTOM_INTENT = "com.codemotionapps.reactnativedarkmode.MODE_CHANGE";
-
-	public class Receiver extends BroadcastReceiver {
-		@Override
-		public void onReceive(Context context, Intent intent) {
-			if (intent.getAction().equals(CUSTOM_INTENT)) {
-				System.out.println("GOT THE INTENT");
-			}
-		}
-	}
 
 	public DarkModeModule(final ReactApplicationContext reactContext) {
 		super(reactContext);
 		this.reactContext = reactContext;
 
 		Intent intent = new Intent(reactContext, DarkModeService.class);
-		reactContext.getApplicationContext().startService(intent);
+		// https://stackoverflow.com/a/47654126/882847
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+			reactContext.getApplicationContext().startForegroundService(intent);
+		} else {
+			reactContext.getApplicationContext().startService(intent);
+		}
 	}
 
 	@Override
