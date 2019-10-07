@@ -9,6 +9,7 @@
 
 ```sh
 npm install react-native-dark-mode
+pod install # for iOS
 # If you're running React Native 0.59 or lower also run `react-native link react-native-dark-mode`
 ```
 
