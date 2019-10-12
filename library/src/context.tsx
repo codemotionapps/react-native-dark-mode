@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect, Context } from 'react'
+import React, { createContext, useContext, useState, useEffect, Context, ReactNode } from 'react'
 
 import { eventEmitter } from './event-emitter'
 import { Mode } from './types'
@@ -9,7 +9,7 @@ DarkModeContext.displayName = 'DarkModeContext'
 
 interface IProps {
 	mode?: Mode
-	children: JSX.Element
+	children: ReactNode
 }
 
 function useCurrentMode(forcedMode?: Mode) {
