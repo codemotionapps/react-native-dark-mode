@@ -37,9 +37,11 @@ function useCurrentMode(forcedMode?: Mode) {
 export function DarkModeProvider({ children, mode }: IProps) {
 	const currentMode = useCurrentMode(mode)
 
-	return <DarkModeContext.Provider value={mode || currentMode}>
-		{children}
-	</DarkModeContext.Provider>
+	return (
+                <DarkModeContext.Provider value={mode || currentMode}>
+                        {children}
+                </DarkModeContext.Provider>
+        );
 }
 
 export function useDarkModeContext(): Mode {
