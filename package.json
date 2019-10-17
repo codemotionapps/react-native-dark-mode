@@ -9,7 +9,9 @@
 			"**/react-native",
 			"**/react-native/**",
 			"**/react",
-			"**/react/**"
+			"**/react/**",
+			"**/react-native-dark-mode",
+			"**/react-native-dark-mode/**"
 		]
 	},
 	"scripts": {

@@ -1,5 +1,9 @@
 package com.codemotionapps.reactnativedarkmode;
 
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.res.Configuration;
 
 import com.facebook.react.bridge.LifecycleEventListener;
@@ -13,11 +17,38 @@ import java.util.Map;
 public class DarkModeModule extends ReactContextBaseJavaModule implements LifecycleEventListener {
 	private ReactApplicationContext reactContext;
 
+	private class Receiver extends BroadcastReceiver {
+		private DarkModeModule module;
+
+		public Receiver(DarkModeModule module) {
+			super();
+			this.module = module;
+		}
+
+		@Override
+		public void onReceive(Context context, Intent intent) {
+			this.module.notifyForChange();
+		}
+	}
+
 	public DarkModeModule(final ReactApplicationContext reactContext) {
 		super(reactContext);
 		this.reactContext = reactContext;
 
 		reactContext.addLifecycleEventListener(this);
+
+		reactContext.registerReceiver(new Receiver(this), new IntentFilter("android.intent.action.CONFIGURATION_CHANGED"));
+	}
+
+	private void notifyForChange() {
+		if (reactContext.hasActiveCatalystInstance()) {
+			Configuration configuration = reactContext.getResources().getConfiguration();
+			String mode =  (configuration.uiMode & Configuration.UI_MODE_NIGHT_MASK) == Configuration.UI_MODE_NIGHT_YES
+					? "dark"
+					: "light";
+			reactContext.getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class)
+					.emit("currentModeChanged", mode);
+		}
 	}
 
 	@Override
@@ -34,22 +65,9 @@ public class DarkModeModule extends ReactContextBaseJavaModule implements Lifecy
 		return constants;
 	}
 
-	public static String getCurrentMode(Configuration configuration) {
-		return (configuration.uiMode & Configuration.UI_MODE_NIGHT_MASK) == Configuration.UI_MODE_NIGHT_YES
-				? "dark"
-				: "light";
-	}
-
-	public static void notifyForChange(ReactApplicationContext context, Configuration configuration) {
-		if (context.hasActiveCatalystInstance()) {
-			context.getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class)
-					.emit("currentModeChanged", DarkModeModule.getCurrentMode(configuration));
-		}
-	}
-
 	@Override
 	public void onHostResume() {
-		DarkModeModule.notifyForChange(reactContext, reactContext.getResources().getConfiguration());
+		this.notifyForChange();
 	}
 
 	@Override

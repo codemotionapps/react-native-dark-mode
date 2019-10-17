@@ -7,10 +7,36 @@
 
 ## Installation
 
+### Prevent Android app from restarting when dark mode changes
+
+You must append `|uiMode` to the `android:configChanges` prop of `<activity>` in `AndroidManifest.xml`. Example:
+
+```diff
+diff --git a/android/app/src/main/AndroidManifest.xml b/android/app/src/main/AndroidManifest.xml
+--- a/android/app/src/main/AndroidManifest.xml
++++ b/android/app/src/main/AndroidManifest.xml
+@@ -13,7 +13,7 @@
+                <activity
+                        android:name=".MainActivity"
+                        android:label="@string/app_name"
+-                       android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
++                       android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+                        android:windowSoftInputMode="adjustResize">
+                        <intent-filter>
+                                <action android:name="android.intent.action.MAIN" />
+```
+
+### React Native 0.60 or above
 ```sh
 npm install react-native-dark-mode
 pod install # for iOS
-# If you're running React Native 0.59 or lower also run `react-native link react-native-dark-mode`
+```
+
+### React Native 0.59 or below
+
+```sh
+npm install react-native-dark-mode
+react-native link react-native-dark-mode
 ```
 
 ## Usage
@@ -170,9 +196,9 @@ eventEmitter.on('currentModeChanged', newMode => {
 
 ### iOS
 
--   Xcode 11 beta 1 or higher
+-   Xcode 11
 -   React Native 0.59.9 or higher
--   iOS 13 beta 1 or higher to see it in action
+-   iOS 13 to see it in action
 
 ### Android
 

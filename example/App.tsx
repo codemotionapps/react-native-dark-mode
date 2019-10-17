@@ -1,5 +1,5 @@
-import React from 'react'
-import { View, Text, Image } from 'react-native'
+import React, { useState } from 'react'
+import { View, Text, Image, Button } from 'react-native'
 import {
 	useDarkModeContext,
 	DynamicValue,
@@ -10,6 +10,11 @@ import {
 } from 'react-native-dark-mode'
 
 import Extra from './Extra'
+
+function Counter() {
+	const [counter, setCounter] = useState(0)
+	return <Button title={counter.toString()} onPress={() => setCounter(i => i + 1)} />
+}
 
 export default function App() {
 	const mode = useDarkModeContext()
@@ -28,6 +33,8 @@ export default function App() {
 			<DarkModeProvider mode="light">
 				<Extra />
 			</DarkModeProvider>
+
+			<Counter />
 		</View>
 	)
 }
