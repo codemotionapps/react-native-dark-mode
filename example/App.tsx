@@ -7,6 +7,7 @@ import {
 	DynamicStyleSheet,
 	DarkModeProvider,
 	useDynamicValue,
+	eventEmitter,
 } from 'react-native-dark-mode'
 
 import Extra from './Extra'
@@ -15,6 +16,8 @@ function Counter() {
 	const [counter, setCounter] = useState(0)
 	return <Button title={counter.toString()} onPress={() => setCounter(i => i + 1)} />
 }
+
+eventEmitter.on('currentModeChanged', newMode => console.log(newMode))
 
 export default function App() {
 	const mode = useDarkModeContext()

@@ -15,7 +15,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class DarkModeModule extends ReactContextBaseJavaModule implements LifecycleEventListener {
-	private ReactApplicationContext reactContext;
+	private final ReactApplicationContext reactContext;
+	private final int initialMode;
+	private int lastEmittedMode;
 
 	private class Receiver extends BroadcastReceiver {
 		private DarkModeModule module;
@@ -35,6 +37,9 @@ public class DarkModeModule extends ReactContextBaseJavaModule implements Lifecy
 		super(reactContext);
 		this.reactContext = reactContext;
 
+		initialMode = reactContext.getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK;
+		lastEmittedMode = initialMode;
+
 		reactContext.addLifecycleEventListener(this);
 
 		reactContext.registerReceiver(new Receiver(this), new IntentFilter("android.intent.action.CONFIGURATION_CHANGED"));
@@ -43,7 +48,10 @@ public class DarkModeModule extends ReactContextBaseJavaModule implements Lifecy
 	private void notifyForChange() {
 		if (reactContext.hasActiveCatalystInstance()) {
 			Configuration configuration = reactContext.getResources().getConfiguration();
-			String mode =  (configuration.uiMode & Configuration.UI_MODE_NIGHT_MASK) == Configuration.UI_MODE_NIGHT_YES
+			int currentMode = configuration.uiMode & Configuration.UI_MODE_NIGHT_MASK;
+			if (currentMode == lastEmittedMode) return;
+			lastEmittedMode = currentMode;
+			String mode = currentMode == Configuration.UI_MODE_NIGHT_YES
 					? "dark"
 					: "light";
 			reactContext.getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class)
@@ -58,10 +66,9 @@ public class DarkModeModule extends ReactContextBaseJavaModule implements Lifecy
 
 	@Override
 	public Map<String, Object> getConstants() {
-		int currentMode = reactContext.getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK;
 		final Map<String, Object> constants = new HashMap<>();
-		constants.put("initialMode", currentMode == Configuration.UI_MODE_NIGHT_YES ? "dark" : "light");
-		constants.put("supportsDarkMode", currentMode != Configuration.UI_MODE_NIGHT_UNDEFINED);
+		constants.put("initialMode", initialMode == Configuration.UI_MODE_NIGHT_YES ? "dark" : "light");
+		constants.put("supportsDarkMode", initialMode != Configuration.UI_MODE_NIGHT_UNDEFINED);
 		return constants;
 	}
 
