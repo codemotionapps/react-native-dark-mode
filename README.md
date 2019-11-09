@@ -29,10 +29,10 @@ diff --git a/android/app/src/main/AndroidManifest.xml b/android/app/src/main/And
 ### React Native 0.60 or above
 ```sh
 npm install react-native-dark-mode
-pod install # for iOS
+cd ios && pod install # for iOS
 ```
 
-### React Native 0.59 or below
+### React Native 0.59
 
 ```sh
 npm install react-native-dark-mode
