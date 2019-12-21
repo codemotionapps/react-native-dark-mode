@@ -177,7 +177,7 @@ This is the initial mode that the app started in.
 ```javascript
 import { initialMode } from 'react-native-dark-mode'
 
-console.log('App started in', intialMode, 'mode')
+console.log('App started in', initialMode, 'mode')
 ```
 
 #### `eventEmitter`
