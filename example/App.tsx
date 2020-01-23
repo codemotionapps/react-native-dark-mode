@@ -26,6 +26,8 @@ export default function App() {
 
 	return (
 		<View style={styles.container}>
+			<Image source={require('./meme.png')} style={styles.meme} />
+
 			<Image source={logo} style={styles.image} />
 
 			<Text style={styles.initialStyle}>Current mode: {mode}</Text>
@@ -37,7 +39,7 @@ export default function App() {
 				<Extra />
 			</DarkModeProvider>
 
-			<Counter />
+			{/* <Counter /> */}
 		</View>
 	)
 }
@@ -60,5 +62,10 @@ const dynamicStyles = new DynamicStyleSheet({
 		borderColor: new DynamicValue('#000000', '#FFFFFF'),
 		width: 80,
 		height: 80,
+	},
+	meme: {
+		width: '100%',
+		height: 200,
+		marginBottom: 20,
 	},
 })
