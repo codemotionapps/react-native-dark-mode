@@ -1,6 +1,6 @@
 import { EventEmitter } from 'events'
 
-import { initialMode } from './initial-mode'
+import { currentMode } from './initial-mode'
 import { Mode } from './types'
 
 export declare interface DarkModeEventEmitter {
@@ -10,7 +10,7 @@ export declare interface DarkModeEventEmitter {
 }
 
 export class DarkModeEventEmitter extends EventEmitter {
-	public currentMode: Mode = initialMode
+	public currentMode: Mode = currentMode
 
 	constructor() {
 		super()

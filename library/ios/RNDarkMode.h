@@ -7,4 +7,6 @@
 
 - (void)currentModeChanged:(NSString *)newMode;
 
+- (NSString *)currentMode;
+
 @end

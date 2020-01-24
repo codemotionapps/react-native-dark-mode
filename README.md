@@ -180,6 +180,16 @@ import { initialMode } from 'react-native-dark-mode'
 console.log('App started in', initialMode, 'mode')
 ```
 
+#### `currentMode`
+
+This is the current mode of the app.
+
+```javascript
+import { currentMode } from 'react-native-dark-mode'
+
+console.log('App is currently in', currentMode, 'mode')
+```
+
 #### `eventEmitter`
 
 Allows you to subscribe to changes in the mode.

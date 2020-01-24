@@ -33,6 +33,10 @@ RCT_EXPORT_MODULE();
 	};
 }
 
+- (NSString *)currentMode {
+	return [UIScreen getCurrentMode];
+}
+
 - (NSArray<NSString *> *)supportedEvents
 {
 	return @[@"currentModeChanged"];
