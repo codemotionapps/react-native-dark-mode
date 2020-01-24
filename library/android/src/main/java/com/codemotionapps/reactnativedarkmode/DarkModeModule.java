@@ -72,6 +72,10 @@ public class DarkModeModule extends ReactContextBaseJavaModule implements Lifecy
 		return constants;
 	}
 
+  public String currentMode () {
+		return reactContext.getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK;
+  }
+
 	@Override
 	public void onHostResume() {
 		this.notifyForChange();
