@@ -26,6 +26,10 @@ diff --git a/android/app/src/main/AndroidManifest.xml b/android/app/src/main/And
                                 <action android:name="android.intent.action.MAIN" />
 ```
 
+### (iOS) Make sure you don't have `UIUserInterfaceStyle` in `Info.plist`
+
+In iOS you can force the operating system to display your app always in light mode or dark mode by specifying it in `Info.plist`. If you did that in the past this module will not work.
+
 ### React Native 0.60 or above
 ```sh
 npm install react-native-dark-mode
