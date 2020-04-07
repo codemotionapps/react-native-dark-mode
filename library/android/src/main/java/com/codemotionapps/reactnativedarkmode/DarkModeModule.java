@@ -45,6 +45,13 @@ public class DarkModeModule extends ReactContextBaseJavaModule implements Lifecy
 		reactContext.registerReceiver(new Receiver(this), new IntentFilter("android.intent.action.CONFIGURATION_CHANGED"));
 	}
 
+	@ReactMethod(
+      isBlockingSynchronousMethod = true
+  )
+	public String getCurrentMode() {
+		return lastEmittedMode
+	}
+
 	private void notifyForChange() {
 		if (reactContext.hasActiveCatalystInstance()) {
 			Configuration configuration = reactContext.getResources().getConfiguration();
