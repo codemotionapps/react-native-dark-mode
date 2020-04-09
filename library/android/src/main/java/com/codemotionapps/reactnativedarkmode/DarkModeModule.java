@@ -9,6 +9,7 @@ import android.content.res.Configuration;
 import com.facebook.react.bridge.LifecycleEventListener;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
+import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.modules.core.DeviceEventManagerModule;
 
 import java.util.HashMap;
@@ -45,11 +46,8 @@ public class DarkModeModule extends ReactContextBaseJavaModule implements Lifecy
 		reactContext.registerReceiver(new Receiver(this), new IntentFilter("android.intent.action.CONFIGURATION_CHANGED"));
 	}
 
-	@ReactMethod(
-      isBlockingSynchronousMethod = true
-  )
-	public String getCurrentMode() {
-		return lastEmittedMode
+	private String getModeFromInt(int mode) {
+		return mode == Configuration.UI_MODE_NIGHT_YES ? "dark" : "light";
 	}
 
 	private void notifyForChange() {
@@ -58,12 +56,17 @@ public class DarkModeModule extends ReactContextBaseJavaModule implements Lifecy
 			int currentMode = configuration.uiMode & Configuration.UI_MODE_NIGHT_MASK;
 			if (currentMode == lastEmittedMode) return;
 			lastEmittedMode = currentMode;
-			String mode = currentMode == Configuration.UI_MODE_NIGHT_YES
-					? "dark"
-					: "light";
+			String mode = getModeFromInt(currentMode);
 			reactContext.getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class)
 					.emit("currentModeChanged", mode);
 		}
+	}
+
+	@ReactMethod(
+      isBlockingSynchronousMethod = true
+  )
+	public String getCurrentMode() {
+		return getModeFromInt(lastEmittedMode);
 	}
 
 	@Override

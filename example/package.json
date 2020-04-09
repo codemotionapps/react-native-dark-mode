@@ -3,12 +3,17 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
-		"start": "node node_modules/react-native/local-cli/cli.js start"
+		"build": "cd ../library/ && yarn build && cd ../example/",
+		"setup": "yarn build && rm -rf ./node_modules && yarn",
+		"start": "node node_modules/react-native/local-cli/cli.js start",
+		"ios": "react-native run-ios",
+		"android": "react-native run-android",
+		"postinstall": "node ../scripts/examples_postinstall.js node_modules/react-native-dark-mode/"
 	},
 	"dependencies": {
 		"react": "16.8.3",
 		"react-native": "0.59.9",
-		"react-native-dark-mode": "0.2.2"
+		"react-native-dark-mode": "file:../library/"
 	},
 	"devDependencies": {
 		"@types/react": "^16.8.19"
