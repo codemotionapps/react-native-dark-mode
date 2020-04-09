@@ -15,7 +15,8 @@
 		]
 	},
 	"scripts": {
-		"start": "yarn workspace example start"
+		"start": "yarn workspace example start",
+		"pretty": "yarn prettier --write '**/*.{js,ts,tsx}'"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.4.5",
@@ -24,6 +25,7 @@
 		"babel-plugin-module-resolver": "^3.2.0",
 		"metro-react-native-babel-preset": "^0.54.1",
 		"rimraf": "^2.6.3",
-		"typescript": "^3.5.1"
+		"typescript": "^3.5.1",
+		"prettier": "^2.0.4"
 	}
 }

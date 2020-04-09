@@ -4,7 +4,6 @@ import { IndexedObject, ValueOf } from 'toolkit.ts'
 import { DynamicValue } from './dynamic-value'
 import { Mode } from './types'
 
-
 type Style = ViewStyle | TextStyle | ImageStyle
 
 type DynamicStyle<T extends Style> = { [Key in keyof T]: T[Key] | DynamicValue<T[Key]> }
@@ -12,11 +11,10 @@ type DynamicStyles<T> = { [P in keyof T]: DynamicStyle<Style> }
 
 type NormalizeStyle<T> = T extends DynamicStyle<infer R> ? R : T
 export type NormalizeStyles<T extends DynamicStyles<T>> = { [Key in keyof T]: NormalizeStyle<T[Key]> }
-						
+
 export type DynamicViewStyle = DynamicStyle<ViewStyle>
 export type DynamicTextStyle = DynamicStyle<TextStyle>
 export type DynamicImageStyle = DynamicStyle<ImageStyle>
-						
 
 function parseStylesFor<T extends DynamicStyles<T>>(styles: T, mode: Mode): NormalizeStyles<T> {
 	const newStyles: IndexedObject<IndexedObject<ValueOf<ValueOf<T>>>> = {}
@@ -31,7 +29,7 @@ function parseStylesFor<T extends DynamicStyles<T>>(styles: T, mode: Mode): Norm
 		newStyles[i] = newStyle
 	}
 
-	return newStyles as unknown as NormalizeStyles<T>
+	return (newStyles as unknown) as NormalizeStyles<T>
 }
 
 export class DynamicStyleSheet<T extends DynamicStyles<T>> {

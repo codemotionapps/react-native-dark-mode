@@ -5,9 +5,11 @@ import { DynamicStyleSheet, useDynamicStyleSheet, useDarkModeContext, DynamicVal
 export default function Extra() {
 	const mode = useDarkModeContext()
 	const styles = useDynamicStyleSheet(dynamicStyleSheet)
-	return <View style={styles.container}>
-		<Text style={styles.text}>Forced mode: {mode}</Text>
-	</View>
+	return (
+		<View style={styles.container}>
+			<Text style={styles.text}>Forced mode: {mode}</Text>
+		</View>
+	)
 }
 
 const dynamicStyleSheet = new DynamicStyleSheet({
@@ -23,5 +25,5 @@ const dynamicStyleSheet = new DynamicStyleSheet({
 	text: {
 		textAlign: 'center',
 		color: new DynamicValue('black', 'white'),
-	}
+	},
 })

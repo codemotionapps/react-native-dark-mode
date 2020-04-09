@@ -13,7 +13,7 @@ interface IProps {
 }
 
 function useCurrentMode(forcedMode?: Mode) {
-	const [ currentMode, setCurrentMode ] = useState<Mode>(eventEmitter.currentMode)
+	const [currentMode, setCurrentMode] = useState<Mode>(eventEmitter.currentMode)
 
 	useEffect(() => {
 		if (forcedMode) return
@@ -37,9 +37,7 @@ function useCurrentMode(forcedMode?: Mode) {
 export function DarkModeProvider({ children, mode }: IProps) {
 	const currentMode = useCurrentMode(mode)
 
-	return <DarkModeContext.Provider value={mode || currentMode}>
-		{children}
-	</DarkModeContext.Provider>
+	return <DarkModeContext.Provider value={mode || currentMode}>{children}</DarkModeContext.Provider>
 }
 
 export function useDarkModeContext(): Mode {
