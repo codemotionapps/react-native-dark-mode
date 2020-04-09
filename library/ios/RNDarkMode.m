@@ -20,6 +20,11 @@
 
 RCT_EXPORT_MODULE();
 
+RCT_EXPORT_BLOCKING_SYNCHRONOUS_METHOD(getCurrentMode)
+{
+  return [UIScreen getCurrentMode];
+}
+
 - (NSDictionary *)constantsToExport
 {
 	NSNumber *supportsDarkMode = [NSNumber numberWithBool:NO];
