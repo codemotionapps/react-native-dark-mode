@@ -16,19 +16,31 @@ export type NormalizeStyles<T extends DynamicStyles<T>> = { [Key in keyof T]: No
 export type DynamicViewStyle = DynamicStyle<ViewStyle>
 export type DynamicTextStyle = DynamicStyle<TextStyle>
 export type DynamicImageStyle = DynamicStyle<ImageStyle>
-						
 
 function parseStylesFor<T extends DynamicStyles<T>>(styles: T, mode: Mode): NormalizeStyles<T> {
 	const newStyles: IndexedObject<IndexedObject<ValueOf<ValueOf<T>>>> = {}
 
+	let containsDynamicValues = false
 	for (const i in styles) {
 		const style = styles[i]
 		const newStyle: IndexedObject<ValueOf<ValueOf<T>>> = {}
 		for (const i in style) {
 			const value = style[i]
+
+			if(value instanceof DynamicValue) {
+				containsDynamicValues = true
+			}
+
 			newStyle[i] = value instanceof DynamicValue ? value[mode] : value
 		}
 		newStyles[i] = newStyle
+	}
+
+	if(!containsDynamicValues && process.env.NODE_ENV === 'development') {
+		console.warn(
+			"A Dynamic StyleSheet was used without any DynamicValues. " +
+			"Consider replacing with a regular StyleSheet."
+		)
 	}
 
 	return newStyles as unknown as NormalizeStyles<T>
