@@ -23,6 +23,7 @@
 		"@types/events": "*",
 		"@types/react": "*",
 		"@types/react-native": "*",
+		"@types/node": "^13.13.4",
 		"events": "^3.0.0",
 		"toolkit.ts": "^0.0.2"
 	}
