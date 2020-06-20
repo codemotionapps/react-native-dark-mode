@@ -5,6 +5,9 @@
 
 <p align="center"><img src="https://raw.githubusercontent.com/codemotionapps/react-native-dark-mode/master/showcase.ios.gif" alt="Showcase iOS" width="200" height="433">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://raw.githubusercontent.com/codemotionapps/react-native-dark-mode/master/showcase.android.gif" alt="Showcase Android" width="234" height="433"></p>
 
+<h1 align="center">⚠️ DEPRECATED ⚠️</h1>
+<p align="center">Please upgrade to React Native 0.62 and <a href="https://npmjs.com/package/react-native-dynamic">react-native-dynamic</a> (in 1.0.0 all high level APIs are available, intentionally undocumented, will be removed in 2.0.0).</p>
+
 ## Installation
 
 ### Prevent Android app from restarting when dark mode changes
